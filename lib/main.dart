@@ -1,13 +1,11 @@
+import 'package:final_project_viewpage/Screens/ViewDestinationPage.dart';
+import 'package:final_project_viewpage/Screens/testPage.dart';
 import 'package:flutter/material.dart';
 
-import 'auth/login.dart';
-import 'home.dart';
+import 'Screens/testPage.dart';
 
 void main() {
-  runApp(MaterialApp(
-    debugShowMaterialGrid: false,
-    home: MyApp(),
-  ));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,6 +14,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Login();
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData.dark().copyWith(),
+      home: testPage(),
+    );
   }
 }
