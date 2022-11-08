@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Data extends StatelessWidget {
   String urlImag1 = "";
   String urlImag2 = "";
-  String title1 = "";
+  String title1 = "asd";
   String title2 = "";
   Data(String urlImag1, String urlImag2, String title1, String title2) {
     urlImag1 = this.urlImag1;
